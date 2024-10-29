@@ -1,25 +1,15 @@
-#include <stdio.h>
-#include <string.h>
-
-void replaceDigits(char *number) {
-    for (int i = 0; number[i] != '\0'; i++) {
-        if (number[i] == '0') {
-            number[i] = '1';
-        } else if (number[i] == '1') {
-            number[i] = '0';
-        }
-    }
+//a
+if (item != 0) {
+    product *= item;
 }
-
-int main() {
-    char number[100];
-
-    printf("Enter a number: ");
-    scanf("%s", number);
-
-    replaceDigits(number);
-
-    printf("After replacing 0 and 1, the number is: %s\n", number);
-
-    return 0;
+printf("%d\n", product);
+//b
+y = (x > y) ? (x - y) : (y - x);
+//c
+if (x == 0) {
+    zero_count++;
+} else if (x < 0) {
+    minus_sum += x;
+} else {
+    plus_sum += x;
 }
